@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {PokemonListComponent} from './pokemon-list/pokemon-list.component'
+import {PokemonCardComponent} from './pokemon-card/pokemon-card.component'
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet,
-            PokemonListComponent
+            PokemonListComponent,
+            PokemonCardComponent
           ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.sass'
